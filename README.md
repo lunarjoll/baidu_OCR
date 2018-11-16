@@ -49,7 +49,7 @@ it will output to stdout
   <tr>
 <td > <center>
 
-![2](./pics/2.jpg =511x655)  
+![2](./pics/2.jpg )  
 </center></td>
 
 <td ><center>  
