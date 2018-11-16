@@ -1,10 +1,15 @@
-# baidu_OCR
-##about
+# baidu_OCR  
+
+baidu_OCR is a cloud-based script, use free permits.
+
+## about
 
 python3, test in linux. I think it can be used in MacOS or Windows.
 ## dependence
 ``` pip3 install baidu-aip ```
-## use
+
+## help
+
 ```  python3 baidu_OCR.py --init  ```   
 input APP_ID which get in [百度](https://console.bce.baidu.com)
 then  
@@ -49,7 +54,8 @@ it will output to stdout
   <tr>
 <td > <center>
 
-![2](./pics/2.jpg )  
+<img src="./pics/2.jpg" width="655"/>
+[-_-]:  ![2](./pics/2.jpg )  
 </center></td>
 
 <td ><center>  
