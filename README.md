@@ -18,7 +18,7 @@ then
 it will output to stdout
 
 ``` python3 baidu_OCR.py -i inputfile -o outputfile  ```    
-``` python3 baidu_OCR.py -i http://url -o outputfile  ```
+``` python3 baidu_OCR.py -i http://url -o outputfile  ```   
 ``` python3 plus_baidu_OCR.py -i 1.jpg 2.jpg 3.jpg -o outputfile ```   
 ``` python3 plus_baidu_OCR.py -i 1.jpg 2.jpg 3.jpg  ```
 ## result    
