@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 ##this script is developed by lunarjoll and publish in git@github.com:lunarjoll/baidu_OCR.git
 ##sent Email to me :    lunarkindle@yahoo.com
 import requests, sys, getopt, configparser, timeit
@@ -33,7 +33,8 @@ def create_config():
 
 
 def usage():
-    print("when first use, go to baidu and create APP_ID. \n\
+    print("     when first use, go to baidu and create APP_ID. \n\
+            and pip3 install baidu-aip \n\
             and use --init to create config file \n\
             https://console.bce.baidu.com \n")
     print (sys.argv[0], '--init')
