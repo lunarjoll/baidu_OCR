@@ -65,7 +65,7 @@ def get_file_content(input_file):
 
 # 调用通用文字识别接口
 
-def baidu_link(input_file, output_file, options):
+def baidu_link(input_file, output_file, client, options):
     result = client.basicAccurate(get_file_content(input_file), options)
     #print(result)
     words_result=result['words_result']
@@ -89,11 +89,11 @@ def main ():
     parser.add_argument('-o', dest='output_file', default=None)
 
     args = parser.parse_args()
-    client = read_config()
+    #client = read_config()
 
     output_file = args.output_file
     for file in args.input_file:
-        baidu_link(file, output_file, options)
+        baidu_link(file, output_file, read_config(), options)
 
 ''' #this is getopt
 try:
@@ -121,11 +121,11 @@ if input_file == None:
 
 
 #input_file = 'https://imgsa.baidu.com/forum/pic/item/c0d66dcb39dbb6fdfb44797a0424ab18972b3758.jpg'
-#client  = AipOcr(APP_ID, API_KEY, SECRET_KEY)
-config = configparser.ConfigParser()
-config.read("baidu_OCR.conf")
-client = AipOcr(config["baidu"]["APP_ID"], config["baidu"]["API_KEY"], config["baidu"]["SECRET_KEY"])
-
+##client  = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+#config = configparser.ConfigParser()
+#config.read("baidu_OCR.conf")
+#client = AipOcr(config["baidu"]["APP_ID"], config["baidu"]["API_KEY"], config["baidu"]["SECRET_KEY"])
+#
 #baidu_link(input_file, output_file, options)
 
 
