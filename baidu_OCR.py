@@ -41,6 +41,47 @@ def usage():
     print (sys.argv[0], '-i <inputfile> -o <outputfile>')
     return 0
 
+
+
+# 读取图片
+def get_file_content(input_file):
+    image_file = None
+    try:
+        if input_file.startswith('http://') or input_file.startswith('https://'):
+            return requests.get(input_file).content
+            #return image_file
+        else:
+            with open(input_file, 'rb') as fp:
+                return fp.read()
+    except Exception:
+        raise Exception('invalid input_file: %s' % input_file)
+
+
+
+
+# 调用通用文字识别接口
+
+def baidu_link(input_file, output_file, options):
+    result = client.basicAccurate(get_file_content(input_file), options)
+    #print(result)
+    words_result=result['words_result']
+    if output_file == None:
+        for i in range(len(words_result)):
+            print(words_result[i]['words'])
+    else:
+        fo = open(output_file,"w")
+        for i in range(len(words_result)):
+            fo.write(words_result[i]['words'] + "\n")
+            #fo.write("\n")
+        fo.close()
+        end=timeit.default_timer()
+        print('Running time: %s Seconds'%(end-start))
+
+
+
+
+
+
 try:
     opts, args = getopt.getopt(sys.argv[1:], "hi:o:", ["verbose", "version", "ifile=", "init"])
 except getopt.GetoptError:
@@ -65,47 +106,13 @@ if input_file == None:
 
 
 
-#下面3个变量请自行更改
 #input_file = 'https://imgsa.baidu.com/forum/pic/item/c0d66dcb39dbb6fdfb44797a0424ab18972b3758.jpg'
-
 #client  = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 config = configparser.ConfigParser()
 config.read("baidu_OCR.conf")
 client = AipOcr(config["baidu"]["APP_ID"], config["baidu"]["API_KEY"], config["baidu"]["SECRET_KEY"])
 
-# 读取图片
-def get_file_content(input_file):
-    image_file = None
-    try:
-        if input_file.startswith('http://') or input_file.startswith('https://'):
-            return requests.get(input_file).content
-            #return image_file
-        else:
-            with open(input_file, 'rb') as fp:
-                return fp.read()
-    except Exception:
-        raise Exception('invalid input_file: %s' % input_file)
-
-
-
-# 调用通用文字识别接口
-result = client.basicAccurate(get_file_content(input_file), options)
-#print(result)
-words_result=result['words_result']
-if output_file == None:
-    for i in range(len(words_result)):
-        print(words_result[i]['words'])
-else:
-    fo = open(output_file,"w")
-    for i in range(len(words_result)):
-        fo.write(words_result[i]['words'] + "\n")
-        #fo.write("\n")
-    fo.close()
-    end=timeit.default_timer()
-    print('Running time: %s Seconds'%(end-start))
-
-
-
+baidu_link(input_file, output_file, options)
 
 
 '''
