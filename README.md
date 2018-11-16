@@ -54,8 +54,8 @@ it will output to stdout
   <tr>
 <td > <center>
 
-<img src="./pics/2.jpg" width="655"/>
-[-_-]:  ![2](./pics/2.jpg )  
+<img src="./pics/2.jpg" height="655" width="511"/>
+
 </center></td>
 
 <td ><center>  
@@ -102,3 +102,8 @@ it will output to stdout
 </center></td>
 </tr>
 </table>
+
+>https://www.cnblogs.com/szyicol/p/9413516.html
+>http://www.zmonster.me/2015/06/10/baidu_ocr_api_usage.html
+>https://blog.csdn.net/Li_Jiaqian/article/details/80586098
+>https://blog.csdn.net/dz4543/article/details/82191662
