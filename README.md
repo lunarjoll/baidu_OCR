@@ -3,17 +3,19 @@
 
 python3, test in linux. I think it can be used in MacOS or Windows.
 ## dependence
-pip3 install baidu-aip
+``` pip3 install baidu-aip ```
 ## use
-- python3 baidu_OCR.py --init  
-   -input APP_ID which get in [百度](https://console.bce.baidu.com)
+```  python3 baidu_OCR.py --init  ```   
+input APP_ID which get in [百度](https://console.bce.baidu.com)
 then  
-- python3 baidu_OCR.py -i inputfile  
-    -it will output to stdout
-- python3 baidu_OCR.py -i inputfile -o outputfile  
-- python3 baidu_OCR.py -i http://url -o outputfile  
 
-##result    
+ ``` python3 baidu_OCR.py -i inputfile  ```   
+it will output to stdout
+
+``` python3 baidu_OCR.py -i inputfile -o outputfile  ```
+``` python3 baidu_OCR.py -i http://url -o outputfile  ```
+
+## result    
 
 ![1](./pics/1.jpg)
 ```
@@ -47,7 +49,7 @@ then
   <tr>
 <td > <center>
 
-![2](./pics/2.jpg)  
+![2](./pics/2.jpg =511x655)  
 </center></td>
 
 <td ><center>  
