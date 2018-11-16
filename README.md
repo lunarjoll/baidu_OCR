@@ -13,7 +13,7 @@ then
 - python3 baidu_OCR.py -i inputfile -o outputfile  
 - python3 baidu_OCR.py -i http://url -o outputfile  
 
-##result
+##result    
 
 ![1](./pics/1.jpg)
 ```
@@ -42,7 +42,16 @@ then
 现在不是该我嫌麻烦的时候了,智能之王是不是还做了什么其他好事,过后我  
 得好好和他聊一下。  
 ```
-![2](./pics/2.jpg)
+
+<table>
+  <tr>
+<td > <center>
+
+![2](./pics/2.jpg)  
+</center></td>
+
+<td ><center>  
+
 ```
 「都到这种时期了,你们觉得自己还有提条件的立场吗?从将泰斯塔蕾莎大人
 的慈悲一脚踢开的那一刻开始,你们的命运就已经决定了。抵抗还是服从,随你
@@ -81,3 +90,7 @@ then
 无能,正确的传达给皇帝陛下」
 「遵命,阁下」
 ```
+
+</center></td>
+</tr>
+</table>
