@@ -50,15 +50,14 @@ it will output to stdout
 得好好和他聊一下。  
 ```
 
-<table>
-  <tr>
+<table> <tr>
+
 <td > <center>
-
-<img src="./pics/2.jpg" height="655" width="511"/>
-
+<img src="./pics/2.jpg" height="605" width="461"/>
 </center></td>
 
-<td ><center>  
+
+<td > <center>  
 
 ```
 「都到这种时期了,你们觉得自己还有提条件的立场吗?从将泰斯塔蕾莎大人
@@ -103,7 +102,7 @@ it will output to stdout
 </tr>
 </table>
 
->https://www.cnblogs.com/szyicol/p/9413516.html
->http://www.zmonster.me/2015/06/10/baidu_ocr_api_usage.html
->https://blog.csdn.net/Li_Jiaqian/article/details/80586098
->https://blog.csdn.net/dz4543/article/details/82191662
+>https://www.cnblogs.com/szyicol/p/9413516.html   
+>http://www.zmonster.me/2015/06/10/baidu_ocr_api_usage.html   
+>https://blog.csdn.net/Li_Jiaqian/article/details/80586098   
+>https://blog.csdn.net/dz4543/article/details/82191662   
